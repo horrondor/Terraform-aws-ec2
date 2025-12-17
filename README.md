@@ -42,7 +42,7 @@ data "aws_ami" "cloud_raju" {
 module "my_ec2_instance" {
 
   source  = "horrondor/ec2/aws"
-  version = "1.0.3"
+  version = ">=1.0.1"
 
   ec2_instance_type  = var.ec2_instance_type
   ec2_instance_name  = var.ec2_instance_name
