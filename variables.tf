@@ -21,3 +21,8 @@ variable "ec2_zone_name" {
 variable "ec2_ami_id" {
   type = string
 }
+
+variable "security_group_ids" {
+  description = "Security groups to attach to EC2"
+  type        = list(string)
+}
